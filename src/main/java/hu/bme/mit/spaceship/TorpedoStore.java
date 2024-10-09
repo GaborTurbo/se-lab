@@ -32,6 +32,7 @@ public class TorpedoStore {
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       // Throws an error when store is out of ammo or has not enough ammo
+      // Igen en nem hagytam le a new-t. :)
       throw new IllegalArgumentException("numberOfTorpedos");
     }
 
